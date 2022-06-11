@@ -16,6 +16,7 @@
 #define MIRYOKU_X(LAYER, STRING) \
     U_##LAYER## { \
       label = STRING; \
+      sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>; \
       bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_##LAYER, MIRYOKU_LAYER_##LAYER) >; \
     };
 MIRYOKU_LAYER_LIST
