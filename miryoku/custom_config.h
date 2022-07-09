@@ -1,9 +1,14 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
-#define MIRYOKU_ALPHAS_QWERTY
-
 #define MIRYOKU_LAYERS_FLIP
+
+// Remove hold-tap behaviour from zx./ buttons
+#define MIRYOKU_LAYER_BASE \
+&kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
+U_MT(LGUI, A),     U_MT(LALT, S),     U_MT(LCTRL, D),    U_MT(LSHFT, F),    &kp G,             &kp H,             U_MT(LSHFT, J),    U_MT(LCTRL, K),    U_MT(LALT, L),     U_MT(LGUI, SQT),   \
+&kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
+U_NP,              U_NP,              &lt U_FUN DEL,     &lt U_NUM BSPC,    &lt U_SYM RET,     &lt U_MOUSE TAB,   &lt U_NAV SPC,     &lt U_MEDIA ESC,   U_NP,              U_NP
 
 // Swap u_out_tog for u_bt_sel_4
 #define MIRYOKU_LAYER_MEDIA \
